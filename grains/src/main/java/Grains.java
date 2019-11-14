@@ -1,0 +1,20 @@
+import java.math.BigInteger;
+
+class Grains {
+
+    BigInteger grainsOnSquare(final int square) {
+        if (1 <= square && square <= 64) {
+            return BigInteger.valueOf(2).pow(square - 1);
+        } else {
+            throw new IllegalArgumentException("square must be between 1 and 64");
+        }
+    }
+
+    BigInteger grainsOnBoard() {
+
+
+        return  BigInteger.valueOf(2).pow(64).subtract(new BigInteger("1"));
+
+    }
+
+}
