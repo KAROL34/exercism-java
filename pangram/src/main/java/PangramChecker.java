@@ -9,9 +9,6 @@ public class PangramChecker {
                 .filter(Character::isLetter).map(Character::toLowerCase).distinct().count()==26;
     }
 
-    public static void main(String[] args) {
-        String aaa="a quick movement of the enemy will jeopardize five gunboats";
-        System.out.println(aaa.chars().filter(Character::isLetter).map(Character::toLowerCase).distinct().count());
-    }
+
 
 }
